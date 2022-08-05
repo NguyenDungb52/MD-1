@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    
+      <table>
+        <tr>
+          <td>tien</td>
+          <td>tu tien</td>
+          <td>sang tien</td>
+        </tr>
+    <tr>
+          <td>
+            <input type="text" size="20" id="tienvao">
+        </td>
+          <td>
+            <select id="a">
+              <option value="c">USD</option>
+              <option value="d">VND</option>
+              </select>
+            </td>
+            <td>
+                <select id="b">
+                    <option value="c">USD</option>
+                    <option value="d">VND</option>
+                    </select>
+
+            </td>
+            <td>
+                <button onclick="ok()">Chuyen doi</button>
+            </td>
+        </tr>
+      </table>
+    
+     
+    <script>
+
+function ok(){
+    let giatrivao = document.getElementById("tienvao").value
+    let a = document.getElementById("a").value
+    let b = document.getElementById("b").value
+    if ( a == b) {
+        alert(giatrivao)
+    }
+    if( a == "c"  && b == "d") {
+        alert(giatrivao*23000)
+    }
+    if ( a == "d" && b == "c"){
+
+    alert(giatrivao/23000 )
+ }
+    
+    
+
+}
+
+
+    </script>
+  </body>
+  
+</html>
